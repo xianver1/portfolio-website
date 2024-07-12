@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%; 
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #081b29;
+    color: #ededed;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem 5%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    height: 8rem;
+}
+
+.header .logo {
+    font-size: 3rem;
+    font-weight: 200;
+    color: #ededed;
+}
+
+.navbar a {
+    font-size: 1.6rem;
+    color: #ededed;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: transparent;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a:active {
+    color: #679267;
+}
+
+section {
+    min-height: 100vh;
+    padding: 8rem 5%;
+}
+
+.home {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 2rem 5%;
+    text-align: center;
+    gap: 3rem;
+}
+
+.home img {
+    border-radius: 50%;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 40rem;
+    box-shadow: 0 0 1.5rem rgba(65, 82, 241, 0.2);
+}
+
+.home-content {
+    margin-left: 10px;
+    max-width: 70rem;
+}
+
+.home-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.home-content h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    color: rgba(99, 99, 238, 0.877);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+    font-weight: 100;
+    text-align: justify;
+    margin-top: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+.home-content .btn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    color: black;
+    background-color: rgba(99, 99, 238, 0.877);
+    border-radius: 0.8rem;
+    transition: background-color 0.3s;
+}
+
+.btn a:hover {
+    background-color: rgba(99, 99, 238, 0.7);
+}
+
+.about {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 2rem 5%;
+    text-align: center;
+    gap: 3rem;
+}
+
+.about img {
+    border-radius: 0.8rem;
+    margin-left: 10px;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 40rem;
+    box-shadow: 0 0 1.5rem rgba(65, 82, 241, 0.2);
+}
+
+.about-content {
+    max-width: 70rem;
+}
+
+.about-content h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: rgba(99, 99, 238, 0.877);
+}
+
+.about-content h2,
+.about-content span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgba(99, 99, 238, 0.877);
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    font-weight: 100;
+    text-align: justify;
+    margin-top: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+.about-content .btn-nxt {
+    margin-top: 2rem;
+}
+
+.btn-nxt a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    color: black;
+    background-color: rgba(99, 99, 238, 0.877);
+    border-radius: 0.8rem;
+    transition: background-color 0.3s;
+}
+
+.btn-nxt a:hover {
+    background-color: rgba(99, 99, 238, 0.7);
+}
+
+.works {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.works h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    color: #ededed;
+}
+
+.works h1 span {
+    color: rgba(99, 99, 238, 0.877);
+}
+
+.works-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.portfolio-container {
+    border-radius: 0.8rem;
+    overflow: hidden;
+    box-shadow: 0 0 1.5rem rgba(65, 82, 241, 0.5);
+    transition: transform 0.3s ease-in-out;
+    max-width: 30rem;
+    width: 100%;
+}
+
+.portfolio-container:hover {
+    transform: translateY(-0.5rem);
+}
+
+.portfolio-container img {
+    width: 100%;
+    display: block;
+}
+
+.portfolio-info {
+    padding: 2rem;
+}
+
+.portfolio-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio-link {
+    margin-top: 2rem;
+}
+
+.portfolio-link a {
+    font-size: 1.6rem;
+    color: #edadad;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.portfolio-link a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.contact {
+    padding: 8rem 2rem;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+.contact h1 span {
+    color: #3498db;
+}
+
+.contact-contents {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.social-media {
+    margin-bottom: 3rem;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 3rem;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #3498db;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: calc(50% - 1rem);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    font-size: 1.6rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+textarea {
+    height: 15rem;
+}
+
+.submit-btn {
+    background-color: #3498db;
+    border: none;
+    padding: 1.2rem 2rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    background-color: #081b29;
+    padding: 2rem 0;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+footer a {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #ededed;
+}
+
+footer a:hover {
+    color: #3498db;
+}
+
+
+@media (min-width: 768px) {
+
+    .navbar a {
+        margin: 2rem 0;
+        font-size: 2rem;
+        margin-left:10px ;
+    }
+    .home, .about {
+        flex-direction: row;
+        text-align: left;
+        gap: 4rem;
+    }
+
+    .home-content, .about-content {
+        max-width: 50%;
+    }
+
+    .home img, .about img {
+        max-width: 50%;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    textarea:focus {
+        outline: none;
+        border-color: #3498db;
+    }
+}

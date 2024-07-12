@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPorfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-K1Cx5VJGQ26eCHwWhlO8RL82tQmIwwGge8WBe/cvhMjOhY0pg9xT1axx+8a4glwJLcW+TMBGHk3+1+HJ33S1PQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Seano.</a>
+        </label>
+        <nav class="navbar">
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#works">WORK</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+    </header>
+    
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm Christian Noblejas </h1>
+            <h3>  <span class="text"></span></h3>
+            <p>As an aspiring web developer and a second-year college student
+                 pursuing a Bachelor of Science in Information Technology, 
+                 I am deeply passionate about creating innovative and user-friendly web solutions. 
+                 My academic journey has provided me with a solid foundation in programming, 
+                 database management, and web design, equipping me with the 
+                 technical skills necessary to excel in the dynamic field of web development. 
+                 I am eager to apply my knowledge in real-world projects, continuously learn new technologies, 
+                 and contribute to the ever-evolving digital landscape.</p>
+            <div class="btn">
+                <a href="">Hire Me</a>
+                <a href="#about">About Me</a>
+            </div>
+        </div>
+            <div class="home-img">
+                <img src="My.jpg" alt="My picture">
+            </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="my-img">
+            <img src="an.jpg" alt="My picture">
+        </div>
+        <div class="about-content">
+            <h1>About Me</h1>
+            <h2>Me as <span class="alias"></span></h2>
+            <p>I am an aspiring web developer and a second-year student 
+                pursuing a Bachelor of Science in Information Technology. 
+                I am passionate about creating user-friendly and innovative web solutions. 
+                My studies have given me a strong foundation in programming, database management, and web design.
+                I am committed to learning new technologies and applying my skills to real-world projects. 
+                I look forward to contributing to the digital landscape and working with others to create impactful web experiences.</p>
+            <div class="btn-nxt">
+                <a href="#works">Works</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="works" id="works">
+        <h1><span>Latest</span>/Works of Mine</h1>
+        <div class="works-content">
+            <div class="portfolio-container">
+                <img src="CALC.png" alt="" />
+            <div class="portfolio-info">
+              <h2>Calculator</h2>
+              <div class="portfolio-link">
+                <a
+                  href="https://xianver1.github.io/ipt101-calculator-app/"
+                  target="_blank">Try It!</a>
+              </div>
+            </div>
+        </div>
+  
+        <div class="portfolio-container">
+            <img src="RPS.png" alt="" />
+            <div class="portfolio-info">
+              <h2>Rock Paper Scissor</h2>
+              <div class="portfolio-link">
+                <a
+                  href="https://xianver1.github.io/rock-paper-scissor/"
+                  target="_blank">Try It!</a>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1>Contact <span>Me</span></h1>
+        <div class="contact-contents">
+          <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=100087058724487" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/xian.ver?igsh=MW0yaXRya2doaXY4cQ==" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="tel:+639927218595">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+          <form action="mailto:noblejaschristian2@gmail.com" method="get">
+            <div class="input-form">
+              <input type="text" placeholder="Full Name" required />
+              <input type="email" placeholder="Email Address" required />
+            </div>
+            <div class="input-form">
+              <input type="tel" placeholder="Contact Number" required />
+              <input type="text" placeholder="Email Subject" required />
+            </div>
+            <textarea
+              name="message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+              required></textarea>
+            <input type="submit" value="Send Message" class="submit-btn" />
+          </form>
+        </div>
+      </section>
+      
+
+    <footer>
+        <p>Copyright &copy; 2024 by xianver1 | All Rights Reserved.</p>
+      <div class="top-icon">
+        <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+      </div>
+    </footer>
+
+</body>
+    <script>
+        var typed = new Typed(".text", {
+            strings: ["2ND YEAR COLLEGE","ASPIRING WEB DEVELOPER"],
+            typeSpeed: 70,
+            backSpeed: 60,
+            backDelay: 1000,
+            loop: true
+        });
+
+        var typed = new Typed(".alias", {
+            strings: ["Chano"," Sean","Tian","Istian"],
+            typeSpeed: 70,
+            backSpeed: 60,
+            backDelay: 1000,
+            loop: true
+        });
+    </script>
+</html>
